@@ -1,36 +1,6 @@
-// {
-//   "$schema": "https://openapi.vercel.sh/vercel.json",
-//   "version": 2,
-//   "routes": [
-//     {
-//       "src": "/sitemap.xml",
-//       "headers": {
-//         "Cache-Control": "public, max-age=3600"
-//       }
-//     },
-//     {
-//       "src": "/robots.txt",
-//       "headers": {
-//         "Cache-Control": "public, max-age=3600"
-//       }
-//     },
-//     {
-//       "src": "/(.*)",
-//       "headers": {
-//         "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
-//         "X-Frame-Options": "DENY",
-//         "X-Content-Type-Options": "nosniff",
-//         "Referrer-Policy": "strict-origin-when-cross-origin",
-//         "Permissions-Policy": "geolocation=(self), microphone=()",
-//         "Cache-Control": "public, max-age=86400, must-revalidate"
-//       }
-//     }
-//   ],
-//   "redirects": [
-//     {
-//       "source": "/index.html",
-//       "destination": "/",
-//       "permanent": true
-//     }
-//   ]
-// }
+{
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@vercel/astro" }
+  ]
+}
