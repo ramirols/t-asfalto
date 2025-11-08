@@ -10,6 +10,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: 'https://t-asfalto.com',
+  site: 'https://t-asfalto.vercel.app/',
   integrations: [sitemap(), react()],
 });

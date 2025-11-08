@@ -21,7 +21,9 @@ export default function Header() {
 			<div className="max-w-7xl mx-auto flex justify-between items-center px-6 h-[60px]">
 				<a
 					href="/"
-					className="text-xl font-bold text-gray-900 tracking-tight hover:text-yellow-500 transition-colors"
+					className="text-xl font-bold text-black tracking-tight hover:text-yellow-500 transition text-text"
+					data-aos="fade-in"
+					data-aos-delay="200"
 				>
 					T - ASFALTO
 				</a>
@@ -32,7 +34,9 @@ export default function Header() {
 						<a
 							key={item.name}
 							href={item.link}
-							className="text-gray-700 font-medium hover:text-yellow-500 transition-colors"
+							className="text-text font-medium hover:text-yellow-500 transition-colors"
+							data-aos="fade-in"
+							data-aos-delay="800"
 						>
 							{item.name}
 						</a>
@@ -44,8 +48,10 @@ export default function Header() {
 					onClick={toggleMenu}
 					className="md:hidden text-2xl text-gray-700 focus:outline-none"
 					aria-label="Toggle menu"
+					data-aos="fade-in"
+					data-aos-delay="600"
 				>
-					{menuOpen ? <FaTimes /> : <FaBars />}
+					{menuOpen ? <FaTimes color="black"/> : <FaBars color="black" />}
 				</button>
 			</div>
 
@@ -65,6 +71,8 @@ export default function Header() {
 								href={item.link}
 								onClick={closeMenu}
 								className="py-3 text-center text-gray-800 font-medium hover:bg-yellow-50 hover:text-yellow-600 transition-all"
+								data-aos="fade-in"
+								data-aos-delay="200"
 							>
 								{item.name}
 							</a>

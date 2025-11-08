@@ -2,6 +2,119 @@
 
 ---
 
-<div id="contacto">
-	<h1>Contacto</h1>
-</div>
+<section id="contacto" class="bg-white py-15">
+	<div class="max-w-6xl mx-auto px-6 lg:px-8">
+		<div class="text-center mb-12">
+			<h1
+				class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide text-text"
+				data-aos="fade-in"
+				data-aos-delay="200"
+			>
+				Contáctanos
+			</h1>
+			<p class="text-gray-600 mt-4 max-w-2xl mx-auto" data-aos="fade-in" data-aos-delay="300">
+				Envíanos tu consulta o cotización y nuestro equipo te responderá
+				lo antes posible.
+			</p>
+		</div>
+
+		<div class="grid md:grid-cols-2 gap-10 items-start">
+			<div>
+				<h2 class="text-2xl font-semibold text-text mb-6" data-aos="fade-in" data-aos-delay="400">
+					Información de Contacto
+				</h2>
+				<ul class="space-y-4 text-gray-700" data-aos="fade-in" data-aos-delay="500">
+					<li class="flex items-start">
+						<span class="text-primary text-xl mr-3">📍</span>
+						<span data-aos="fade-in" data-aos-delay="600">Av. Industrial 345, Lima, Perú</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-primary text-xl mr-3">📞</span>
+						<span data-aos="fade-in" data-aos-delay="700">
+							<a
+								href="tel:+51987654321"
+								class="hover:text-primary transition-colors text-text"
+							>
+								+51 987 654 321
+							</a>
+						</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-primary text-xl mr-3">✉️</span>
+						<span data-aos="fade-in" data-aos-delay="800">
+							<a
+								href="mailto:ventas@t-asfalto.pe"
+								class="hover:text-primary transition-colors text-text"
+							>
+								ventas@t-asfalto.pe
+							</a>
+						</span>
+					</li>
+				</ul>
+
+				<div class="mt-8 rounded-xl overflow-hidden shadow-lg" data-aos="fade-in" data-aos-delay="500">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.837239151133!2d-77.0427541!3d-12.1309447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c88a9a0b4e8d%3A0x7b7dbe2b6a9e55db!2sLima%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1696000000000!5m2!1ses!2spe"
+						width="100%"
+						height="280"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+
+			<div class="bg-gray-50 rounded-2xl shadow-md p-8" data-aos="fade-in" data-aos-delay="600">
+				<h2 class="text-2xl font-semibold text-text mb-6">
+					Escríbenos
+				</h2>
+
+				<form
+					action="https://formspree.io/f/tu-endpoint"
+					method="POST"
+					class="space-y-5"
+				>
+					<div>
+						<input
+							placeholder="Escribe tu nombre"
+							id="nombre"
+							type="text"
+							required
+							class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-1 focus:ring-primary focus:border-primary outline-none transition"
+						/>
+					</div>
+
+					<div>
+						<input
+							placeholder="Escribe tu correo electrónico"
+							id="email"
+							name="email"
+							type="email"
+							required
+							class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-1 focus:ring-primary focus:border-primary outline-none transition"
+						/>
+					</div>
+
+					<div>
+						<textarea
+							id="mensaje"
+							name="mensaje"
+							placeholder="Escribe tu mensaje"
+							rows="4"
+							required
+							class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-1 focus:ring-primary focus:border-primary outline-none transition resize-none"
+						></textarea>
+					</div>
+
+					<button
+						type="submit"
+						class="w-full bg-primary hover:bg-primary/80 text-text font-semibold py-3 rounded-lg transition-colors cursor-pointer"
+						data-aos="fade-in"
+						data-aos-delay="1000"
+					>
+						Enviar Mensaje
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
