@@ -54,4 +54,8 @@
         width: 100%;
         padding: 0 20px;
     }
+    
+    .swiper-pagination {
+        bottom: 5px !important;
+    }
 }

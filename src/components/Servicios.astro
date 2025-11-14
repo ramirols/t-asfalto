@@ -1,123 +1,219 @@
 ---
-
+import imageCard1 from "../assets/images/image-card-1.png";
+import imageCard2 from "../assets/images/image-card-1.png";
+import imageCard3 from "../assets/images/image-card-1.png";
 ---
 
-<section id="servicios" class="bg-white py-15">
+<section id="servicios" class="bg-white py-20">
 	<div class="max-w-6xl mx-auto px-6 lg:px-8">
-		<div class="text-center mb-10">
+		<div class="text-center mb-16">
 			<h1
-				class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide text-text"
-				data-aos="fade-in"
-				data-aos-delay="200"
+				class="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide"
+				data-aos="fade-up"
+				data-aos-duration="1000"
 			>
 				Nuestros Servicios
 			</h1>
-			<p class="text-gray-600 mt-4 max-w-3xl mx-auto" data-aos="fade-in" data-aos-delay="300">
+			<p
+				class="text-gray-600 mt-4 max-w-3xl mx-auto"
+				data-aos="fade-up"
+				data-aos-duration="1000"
+			>
 				Ofrecemos una amplia gama de <span
 					class="font-semibold text-primary"
 					>servicios especializados en asfalto</span
-				>
-				para el sector público y privado, garantizando productos de calidad
-				y atención personalizada en todo el Perú.
+				>.
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+			<!-- CARD -->
 			<div
-				class="bg-gray-50 shadow-md hover:shadow-lg rounded-2xl p-8 text-center transition-transform hover:-translate-y-1"
-				data-aos="fade-in"
-				data-aos-delay="400"
+				class="relative group rounded-3xl shadow-md transition-all duration-500 cursor-pointer hover:shadow-[0_0_25px_-5px_rgba(0,0,0,0.3)]"
+				data-aos="fade-up"
+				data-aos-duration="400"
 			>
-				<div class="text-blue-700 text-5xl mb-4">🛣️</div>
-				<h2 class="text-xl font-semibold text-tertiary mb-3">
-					Venta de Asfalto RC-250
-				</h2>
-				<p class="text-gray-600 leading-relaxed">
-					Comercializamos asfalto RC-250 de alta calidad, ideal para
-					imprimaciones, riegos de liga y mezclas asfálticas en
-					caliente, cumpliendo con estándares técnicos y
-					certificaciones vigentes.
-				</p>
+				<div
+					class="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none border-2 border-primary/60"
+				>
+				</div>
+
+				<img
+					src={imageCard1.src}
+					class="w-full h-56 object-cover transition-transform duration-700 group-hover:translate-y-[-10px]"
+				/>
+
+				<div
+					class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+				>
+				</div>
+
+				<div
+					class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-center w-[90%] max-[900px]:w-[80%]"
+				>
+					<div
+						class="bg-primary backdrop-blur-md py-2 px-4 text-white font-semibold"
+					>
+						Pistas
+					</div>
+				</div>
+			</div>
+
+			<!-- CARD 2 -->
+			<div
+				class="relative group rounded-3xl shadow-md transition-all duration-500 cursor-pointer hover:shadow-[0_0_25px_-5px_rgba(0,0,0,0.3)]"
+				data-aos="fade-up"
+				data-aos-duration="800"
+			>
+				<div
+					class="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none border-2 border-primary/60"
+				>
+				</div>
+
+				<img
+					src={imageCard2.src}
+					class="w-full h-56 object-cover transition-transform duration-700 group-hover:translate-y-[-10px]"
+				/>
+
+				<div
+					class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+				>
+				</div>
+
+				<div
+					class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-center w-[90%] max-[900px]:w-[80%]"
+				>
+					<div
+						class="bg-primary backdrop-blur-md py-2 px-4 text-white font-semibold"
+					>
+						Recapeo
+					</div>
+				</div>
+			</div>
+
+			<!-- CARD 3 -->
+			<div
+				class="relative group rounded-3xl shadow-md transition-all duration-500 cursor-pointer hover:shadow-[0_0_25px_-5px_rgba(0,0,0,0.3)]"
+				data-aos="fade-up"
+				data-aos-duration="1200"
+			>
+				<div
+					class="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none border-2 border-primary/60"
+				>
+				</div>
+
+				<img
+					src={imageCard3.src}
+					class="w-full h-56 object-cover transition-transform duration-700 group-hover:translate-y-[-10px]"
+				/>
+
+				<div
+					class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+				>
+				</div>
+
+				<div
+					class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-center w-[90%] max-[900px]:w-[80%]"
+				>
+					<div
+						class="bg-primary backdrop-blur-md py-2 px-4 text-white font-semibold"
+					>
+						Imprimación
+					</div>
+				</div>
 			</div>
 
 			<div
-				class="bg-gray-50 shadow-md hover:shadow-lg rounded-2xl p-8 text-center transition-transform hover:-translate-y-1"
-				data-aos="fade-in"
-				data-aos-delay="500"
+				class="relative group rounded-3xl shadow-md transition-all duration-500 cursor-pointer hover:shadow-[0_0_25px_-5px_rgba(0,0,0,0.3)]"
+				data-aos="fade-up"
+				data-aos-duration="1600"
 			>
-				<div class="text-blue-700 text-5xl mb-4">🏗️</div>
-				<h2 class="text-xl font-semibold text-tertiary mb-3">
-					Asfalto MC-30 y MC-70
-				</h2>
-				<p class="text-gray-600 leading-relaxed">
-					Suministramos asfaltos MC-30 y MC-70 para estabilización de
-					suelos y tratamientos superficiales, garantizando una
-					correcta adherencia y durabilidad en obras viales.
-				</p>
+				<div
+					class="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none border-2 border-primary/60"
+				>
+				</div>
+
+				<img
+					src={imageCard3.src}
+					class="w-full h-56 object-cover transition-transform duration-700 group-hover:translate-y-[-10px]"
+				/>
+
+				<div
+					class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+				>
+				</div>
+
+				<div
+					class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-center w-[90%] max-[900px]:w-[80%]"
+				>
+					<div
+						class="bg-primary backdrop-blur-md py-2 px-4 text-white font-semibold"
+					>
+						Slurry
+					</div>
+				</div>
 			</div>
 
 			<div
-				class="bg-gray-50 shadow-md hover:shadow-lg rounded-2xl p-8 text-center transition-transform hover:-translate-y-1"
-				data-aos="fade-in"
-				data-aos-delay="600"
+				class="relative group rounded-3xl shadow-md transition-all duration-500 cursor-pointer hover:shadow-[0_0_25px_-5px_rgba(0,0,0,0.3)]"
+				data-aos="fade-up"
+				data-aos-duration="2000"
 			>
-				<div class="text-blue-700 text-5xl mb-4">🧱</div>
-				<h2 class="text-xl font-semibold text-tertiary mb-3">
-					Emulsiones Asfálticas
-				</h2>
-				<p class="text-gray-600 leading-relaxed">
-					Distribuimos emulsiones catiónicas y aniónicas para riegos
-					de imprimación, mantenimiento y sellado, adaptadas a
-					diversos tipos de pavimentos y condiciones climáticas.
-				</p>
+				<div
+					class="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none border-2 border-primary/60"
+				>
+				</div>
+
+				<img
+					src={imageCard3.src}
+					class="w-full h-56 object-cover transition-transform duration-700 group-hover:translate-y-[-10px]"
+				/>
+
+				<div
+					class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+				>
+				</div>
+
+				<div
+					class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-center w-[90%] max-[900px]:w-[80%]"
+				>
+					<div
+						class="bg-primary backdrop-blur-md py-2 px-4 text-white font-semibold"
+					>
+						Trabajos con asfalto reciclado
+					</div>
+				</div>
 			</div>
 
 			<div
-				class="bg-gray-50 shadow-md hover:shadow-lg rounded-2xl p-8 text-center transition-transform hover:-translate-y-1"
-				data-aos="fade-in"
-				data-aos-delay="700"
+				class="relative group rounded-3xl shadow-md transition-all duration-500 cursor-pointer hover:shadow-[0_0_25px_-5px_rgba(0,0,0,0.3)]"
+				data-aos="fade-up"
+				data-aos-duration="2400"
 			>
-				<div class="text-blue-700 text-5xl mb-4">🚛</div>
-				<h2 class="text-xl font-semibold text-tertiary mb-3">
-					Transporte y Logística
-				</h2>
-				<p class="text-gray-600 leading-relaxed">
-					Contamos con flota propia para el transporte de asfaltos
-					líquidos y emulsiones, asegurando entregas puntuales y
-					seguras en todo el territorio nacional.
-				</p>
-			</div>
+				<div
+					class="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none border-2 border-primary/60"
+				>
+				</div>
 
-			<div
-				class="bg-gray-50 shadow-md hover:shadow-lg rounded-2xl p-8 text-center transition-transform hover:-translate-y-1"
-				data-aos="fade-in"
-				data-aos-delay="800"
-			>
-				<div class="text-blue-700 text-5xl mb-4">🧰</div>
-				<h2 class="text-xl font-semibold text-tertiary mb-3">
-					Asesoría Técnica
-				</h2>
-				<p class="text-gray-600 leading-relaxed">
-					Brindamos orientación profesional para la correcta selección
-					y aplicación de asfaltos según el tipo de obra, temperatura
-					y superficie, optimizando costos y rendimiento.
-				</p>
-			</div>
+				<img
+					src={imageCard3.src}
+					class="w-full h-56 object-cover transition-transform duration-700 group-hover:translate-y-[-10px]"
+				/>
 
-			<div
-				class="bg-gray-50 shadow-md hover:shadow-lg rounded-2xl p-8 text-center transition-transform hover:-translate-y-1"
-				data-aos="fade-in"
-				data-aos-delay="900"
-			>
-				<div class="text-blue-700 text-5xl mb-4">🏢</div>
-				<h2 class="text-xl font-semibold text-tertiary mb-3">
-					Atención a Proyectos
-				</h2>
-				<p class="text-gray-600 leading-relaxed">
-					Atendemos municipalidades, constructoras y empresas
-					privadas, ofreciendo soluciones integrales de pavimentación,
-					mantenimiento y recapeo asfáltico.
-				</p>
+				<div
+					class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+				>
+				</div>
+
+				<div
+					class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-center w-[90%] max-[900px]:w-[80%]"
+				>
+					<div
+						class="bg-primary backdrop-blur-md py-2 px-4 text-white font-semibold"
+					>
+						Señalización de vías
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

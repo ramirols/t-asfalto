@@ -17,7 +17,7 @@ const fadeUp = {
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[75vh] max-[980px]:h-[50vh]">
+    <section className="relative w-full h-[75vh] max-[980px]:h-[60vh]">
       <Swiper
         modules={[EffectFade, Pagination, Autoplay]}
         effect="fade"
@@ -36,8 +36,8 @@ export default function Hero() {
               alt="Venta de Asfalto RC-250"
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover"
-				data-aos="fade-in"
-				data-aos-delay="100"
+              data-aos="fade-in"
+              data-aos-delay="100"
             />
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center px-6" data-aos="fade-in" data-aos-delay="200">
               <motion.div
@@ -81,8 +81,8 @@ export default function Hero() {
               loading="lazy"
               alt="Asfalto MC-30"
               className="absolute inset-0 w-full h-full object-cover"
-					data-aos="fade-in"
-					data-aos-delay="100"
+              data-aos="fade-in"
+              data-aos-delay="100"
             />
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center px-6" data-aos="fade-in" data-aos-delay="200">
               <motion.div
