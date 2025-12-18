@@ -21,11 +21,14 @@ export default function Header() {
 			<div className="max-w-7xl mx-auto flex justify-between items-center px-6 h-[60px]">
 				<a
 					href="/"
-					className="text-xl font-bold text-black tracking-tight hover:text-yellow-500 transition text-text"
 					data-aos="fade-in"
 					data-aos-delay="200"
 				>
-					T - ASFALTO
+					<img
+						src="/images/logo-asfalto.svg"
+						alt="Logo T-ASFALTO"
+						className="h-10 object-contain w-full"
+					/>
 				</a>
 
 				{/* Desktop menu */}
@@ -51,7 +54,7 @@ export default function Header() {
 					data-aos="fade-in"
 					data-aos-delay="600"
 				>
-					{menuOpen ? <FaTimes color="black"/> : <FaBars color="black" />}
+					{menuOpen ? <FaTimes color="black" /> : <FaBars color="black" />}
 				</button>
 			</div>
 

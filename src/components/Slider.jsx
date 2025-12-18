@@ -15,7 +15,7 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeOut" } },
 };
 
-export default function Hero() {
+export default function Slider() {
   return (
     <section className="relative w-full h-[75vh] max-[980px]:h-[60vh]">
       <Swiper

@@ -37,12 +37,12 @@ import AosClient from "../components/AosClient.jsx";
 	</head>
 
 	<body>
-		<Header client:load />
+		<Header client:only="react" />
 		<div class="pt-[60px] flex flex-col relative">
 			<slot />
 		</div>
 		<Footer />
-		<AosClient client:load />
+		<AosClient client:only="react" />
 	</body>
 </html>
 

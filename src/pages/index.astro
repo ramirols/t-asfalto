@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Hero.jsx";
+import Slider from "../components/Slider.jsx";
 import Servicios from "../components/Servicios.astro";
 import Productos from "../components/Productos.astro";
 import Nosotros from "../components/Nosotros.astro";
@@ -10,16 +10,14 @@ import CoberturaNacional from "../components/CoberturaNacional.astro";
 import Certificaciones from "../components/Certificaciones.astro";
 import Testimonios from "../components/Testimonios.astro";
 import Faq from "../components/Faq.astro";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import WhatsAppWidget from "../components/WhatsAppWidget.astro";
 ---
 
 <Layout
 	title="Venta de Asfalto RC-250 | Asfalto Industrial Perú"
 	description="Venta de Asfalto RC-250 y MC-30 en Lima y todo el Perú. Productos de alta calidad para obras civiles e industriales. Cotiza con nosotros hoy."
 >
-	<Hero client:load />
+	<Slider client:only="react" />
 	<Nosotros />
 	<Servicios />
 	<Productos />
@@ -29,4 +27,6 @@ import Faq from "../components/Faq.astro";
 	<PorqueElegirnos />
 	<Faq />
 	<Contacto />
+
+	<WhatsAppWidget />
 </Layout>
